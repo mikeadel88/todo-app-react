@@ -22,7 +22,7 @@ if(arr){
   }
   const deleteTask=(index)=>{
     let templist=taskLists
-    templist.splice(1,index)
+    templist.splice(index,1)
     localStorage.setItem("taskLists",JSON.stringify(templist) )
     setTasklLists(templist)
     window.location.reload()
